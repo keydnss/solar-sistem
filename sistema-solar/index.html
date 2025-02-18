@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Solar System</title>
+</head>
+<body>
+    <header>
+        <h1>PLANETS OF THE SOLAR SYSTEM</h1>
+    </header>
+    <main>
+        <link href="https://fonts.cdnfonts.com/css/thinfingers" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/harmoneux" rel="stylesheet">
+
+        <!-- IMAGENS DOS PLANETAS-->
+            <div id= "mercurio" class="planeta" onclick="mostrarInfo('mercurio-info')">
+                <img src="imagens/mercurio.png" alt="Mercúrio">
+                <h3>Mercury</h3>
+            </div>
+
+            <div id= "venus" class="planeta" onclick="mostrarInfo('venus-info')">
+                <img src="imagens/venus.png" alt="Venus">
+                <h3>Venus</h3>
+            </div>
+
+            <div id= "earth" class="planeta" onclick="mostrarInfo('earth-info')">
+                <img src="imagens/earth.png" alt="Earth">
+                <h2>Earth</h2>
+            </div>
+
+            <div id= "mars" class="planeta" onclick="mostrarInfo('mars-info')">
+                <img src="imagens/mars.png" alt="Mars">
+                <h2>Mars</h2>
+            </div>
+
+            <div id= "jupiter" class="planeta" onclick="mostrarInfo('jupiter-info')">
+                <img src="imagens/Jupiter.png" alt="Jupiter">
+                <h2>Jupiter</h2>
+            </div>
+
+            <div id= "saturn" class="planeta" onclick="mostrarInfo('saturn-info')">
+                <img src="imagens/saturn.png" alt="Saturn">
+                <h2>Saturn</h2>
+            </div>
+
+            <div id= "uranus" class="planeta" onclick="mostrarInfo('uranus-info')">
+                <img src="imagens/uranus.png" alt="Uranus">
+                <h2>Uranus</h2>
+            </div>
+
+            <div id= "neptune" class="planeta" onclick="mostrarInfo('neptune-info')">
+                <img src="imagens/neptune.png" alt="Neptune">
+                <h2>Neptune</h2>
+            </div>
+
+    </main>
+
+    <!-- JANELA MODAIS -->
+    <div id="mercurio-info" class="modal"> 
+        <div class="modal-content"> 
+            <span class="fechar" onclick="fecharInfo('mercurio-info')">&times;</span>
+            <div class="modal-body">
+                <div class="modal-text">
+                    <h2>Mercury</h2>
+                    <p>
+                        Mercury is the closest planet to the Sun and is one of the smallest in our solar system. It has a heavily cratered surface, 
+                        resembling the Moon, and lacks a significant atmosphere, which means it experiences extreme temperature fluctuations — from 800°F 
+                        (427°C) during the day to -330°F (-201°C) at night.
+                    </p>
+                    <h4>Structure</h4>
+                    <table class="modal-table">
+                        <thead>
+                            <tr>
+                                <th>Layer</th>
+                                <th>Composition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Crust</td>
+                                <td>Surface of silicate rock</td>
+                            </tr>
+                            <tr>
+                                <td>Mantle</td>
+                                <td>Solid silicate rock</td>
+                            </tr>
+                            <tr>
+                                <td>Core</td>
+                                <td>Molten iron</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <img src="Imagens/mercurio-inside.png" alt="Mercury inside">
+            </div>
+        </div>
+    </div>
+
+    <div id="venus-info" class="modal"> 
+        <div class="modal-content"> 
+            <span class="fechar" onclick="fecharInfo('venus-info')">&times;</span>
+            <div class="modal-body">
+                <div class="modal-text">
+                    <h2>Venus</h2>
+                    <p>
+                        Venus is the second planet from the Sun and is often called Earth's "sister planet" due to its similar size and composition. 
+                        However, it has a vastly different environment, with a thick atmosphere composed mostly of carbon dioxide, creating an extreme greenhouse effect. 
+                        This results in surface temperatures averaging around 465°C (869°F)—hot enough to melt lead—making Venus the hottest planet in the Solar System.
+                    </p>
+                    <h4>Structure</h4>
+                    <table class="modal-table">
+                        <thead>
+                            <tr>
+                                <th>Layer</th>
+                                <th>Composition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Crust</td>
+                                <td>Solid silicate rock mostly basalt</td>
+                            </tr>
+                            <tr>
+                                <td>Mantle</td>
+                                <td>Solid silicate rock</td>
+                            </tr>
+                            <tr>
+                                <td>Outer core</td>
+                                <td>Liquid iron and nickel</td>
+                            </tr>
+                            <tr>
+                                <td>Inner core</td>
+                                <td>Dense solid iron and nickel</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <img src="Imagens/venus-inside.png" alt="Venus inside">
+            </div>
+        </div>
+    </div>
+
+     <div id="earth-info" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharInfo('earth-info')">&times;</span>
+            <h2>Earth</h2>
+            <p>
+                Earth is the third planet from the Sun and the only known planet to support life. It has a diverse environment, with vast oceans covering about 71% of its surface, and continents that support a wide range of ecosystems. Earth’s atmosphere is composed mostly of nitrogen (78%) and oxygen (21%), with traces of other gases like carbon dioxide and argon, which play a crucial role in maintaining life and regulating temperature.
+            </p>
+        </div>
+     </div>
+
+     <div id="mars-info" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharInfo('mars-info')">&times;</span>
+            <h2>Mars</h2>
+            <p>
+                Mars, often referred to as the "Red Planet," is the fourth planet from the Sun. It is the second-smallest planet in our solar system, with a thin atmosphere mostly made of carbon dioxide. The planet's reddish appearance comes from iron oxide (rust) on its surface, which gives it its signature color.            
+            </p>
+        </div>
+     </div>
+
+     <div id="jupiter-info" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharInfo('jupiter-info')">&times;</span>
+            <h2>Jupiter</h2>
+            <p>
+                Jupiter is the fifth planet from the Sun and the largest in our solar system. It is a gas giant composed mostly of hydrogen and helium, with no solid surface. Its immense size makes it more than 11 times the diameter of Earth, and it has a mass that is 318 times greater than Earth's. Jupiter’s strong gravity plays a key role in shaping the solar system, influencing the orbits of nearby bodies and protecting inner planets from some asteroid impacts. 
+            </p>       
+        </div>
+     </div>
+
+     <div id="saturn-info" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharInfo('saturn-info')">&times;</span>
+            <h2>Saturn</h2>
+            <p>
+                Saturn is the sixth planet from the Sun and is the second-largest in our solar system, after Jupiter. Like Jupiter, Saturn is a gas giant composed mainly of hydrogen and helium, and it lacks a solid surface. It is most famous for its stunning ring system, which is made up of ice particles, rocky debris, and dust. These rings are one of the most striking features in the solar system and extend for thousands of kilometers but are only about 10 kilometers thick.     
+            </p>
+        </div>
+     </div>
+
+     <div id="uranus-info" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharInfo('uranus-info')">&times;</span>
+            <h2>Uranus</h2>
+            <p>
+                Uranus is the seventh planet from the Sun and is often considered an "ice giant," due to its composition, which includes heavier volatile substances like water, ammonia, and methane, in addition to hydrogen and helium. It is unique for its extreme tilt—its axis is tilted by about 98 degrees, meaning it essentially orbits the Sun on its side. This unusual tilt causes extreme seasonal variations, with each pole experiencing 42 years of continuous sunlight followed by 42 years of darkness.            
+            </p>
+        </div>
+     </div>
+
+     <div id="neptune-info" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharInfo('neptune-info')">&times;</span>
+            <h2>Neptune</h2>
+            <p>
+                Neptune is the eighth and farthest planet from the Sun in our solar system. It is similar in composition to Uranus, making it another "ice giant" primarily composed of hydrogen, helium, and heavier elements like water, ammonia, and methane. Neptune has a striking blue color due to the methane in its atmosphere, which absorbs red light and reflects blue light, much like Uranus.            </p>
+        </div>
+     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
